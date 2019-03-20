@@ -74,7 +74,7 @@ gulp.task('html', function () {
         minifyJS: true,
         minifyCSS: true
     };
-    gulp.src('index/*.html')
+    gulp.src('index/**/*.html')
         .pipe(htmlmin(options))
         .pipe(gulp.dest('dest/'));
 });
